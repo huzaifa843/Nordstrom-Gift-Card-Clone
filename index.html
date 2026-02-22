@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gift Card Balance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    Shipping outside of the U.S? Learn About International Shopping
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">NORDSTROM</div>
+    <input type="text" class="search" placeholder="Search for products or brands">
+    <div class="account">Sign In</div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#">New</a>
+    <a href="#">Sale</a>
+    <a href="#">Women</a>
+    <a href="#">Men</a>
+    <a href="#">Beauty</a>
+    <a href="#">Shoes</a>
+    <a href="#">Accessories</a>
+    <a href="#">Kids</a>
+    <a href="#">Designer</a>
+    <a href="#">Home</a>
+    <a href="#">Gifts</a>
+    <a href="#">Services</a>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="container">
+    <h1>Gift Card Balance</h1>
+    <p class="description">
+      Check how much credit you have left on your card.
+    </p>
+
+    <!-- Inline Error -->
+    <div id="inlineError" class="inline-error hidden">
+      <div class="inline-icon">!</div>
+      <div>Enter a Gift Card number and access number or code</div>
+    </div>
+
+    <form id="giftForm">
+      <label>Gift Card Number<span class="required">*</span></label>
+      <input type="text" id="cardNumber" maxlength="19" inputmode="numeric">
+
+      <label>Access Number or Code<span class="required">*</span></label>
+      <input type="text" id="accessCode" maxlength="22" inputmode="numeric">
+
+      <button type="submit">Check Balance</button>
+    </form>
+
+    <div class="secure">
+      🔒 Your gift card information is secure.
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+
+      <div class="modal-body">
+        <div class="modal-icon">!</div>
+
+        <div class="modal-text">
+          <h2>Gift Card not found.</h2>
+          <p>
+            Check the number and try again. If still not working, then our team work on backend please give some time we will right back to you.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
