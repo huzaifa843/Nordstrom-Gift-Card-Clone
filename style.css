@@ -42,6 +42,7 @@ body {
   font-weight: bold;
   letter-spacing: 3px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .search {
@@ -319,4 +320,5 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
+
 }
