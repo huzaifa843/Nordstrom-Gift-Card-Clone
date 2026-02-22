@@ -1,2 +1,2 @@
-# Nordstorm-Gift-Card-Clone
-Nordstorm-Gift-Card-Clone Responsive Clone 
+# Nordstrom-Gift-Card-Clone
+Nordstrom-Gift-Card-Clone Responsive Clone 
